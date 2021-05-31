@@ -1,0 +1,25 @@
+--tables
+user
+	id
+	name
+	username
+	password
+tour
+	id_tour
+	name_tour
+	location_tour
+	date_tour
+	link_tour
+galery
+	id_galery
+	name_galery
+	photo_galery
+album
+	id_album
+	name_album
+	art_album
+	link_album
+note
+	id_note
+	title_note
+	content_note
