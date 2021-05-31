@@ -167,7 +167,7 @@ function myFunction() {
         while ($note = $result->fetch_object()) {
             echo "<h3>$note->title_note</h3>";
             echo "<p>$note->content_note</p>";
-            echo "<a href=\"edit_note.php?id=$note->id_note\">Edit</a>";
+            echo "<a href=\"edit_note.php?id_note=$note->id_note\">Edit</a>";
             printf('<form action="delete_note.php" method="post"><input type="hidden" name="id_note" value="%d"><input type="submit" value="Delete"></form>', $note->id_note);
         }
       }
