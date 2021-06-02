@@ -1,7 +1,5 @@
 <?
-
 session_start();
-
 if ( !isset($_SESSION["login"]) ) {
     header("Location: login.php");
     exit;
@@ -12,22 +10,22 @@ if ( !isset($_SESSION["login"]) ) {
   <head>
   <link href='https://fonts.googleapis.com/css?family=Reem Kufi' rel='stylesheet'>
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Redressed" />
-    <title>Album</title>
+    <title>Album | Billie Eilish</title>
     <style type="text/css">
     .container{
-       margin-left:10%;
        
     }
     * {
         font-family:'Redressed';
       }
     body{
-        background-image: url("gold_bg.png");
+      font-family:'Redressed';
+        background-color: #BDAFA2;
           height: 100%;
           width: 100%;
       }  
       p{
-        font-family: 'Reem Kufi';
+        font-family:'Redressed';
         color : black;
 
     }
@@ -35,7 +33,7 @@ if ( !isset($_SESSION["login"]) ) {
       margin-top: -10px;
       margin-left:-10px;
   overflow: hidden;
-  background-color: #8E6F55;
+  background-image: url("gold_bg.png");
 }
 
 .topnav a {
@@ -46,7 +44,7 @@ if ( !isset($_SESSION["login"]) ) {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
-  background-color:#8E6F55;
+  background-image: url("gold_bg.png");
 }
 
 .topnav a:hover {
@@ -65,7 +63,7 @@ if ( !isset($_SESSION["login"]) ) {
 .topnav-right {
   float: right;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 200%) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -73,7 +71,7 @@ if ( !isset($_SESSION["login"]) ) {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 200%) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -116,7 +114,7 @@ div.desc {
   left: 0;
   padding: 1rem;
   text-align: center;
-  color:black;
+  color:white;
 }
 
     </style>
@@ -147,12 +145,14 @@ function myFunction() {
 }
 </script>
 <div class="container">
-<center><h1>ABOUT</h1></center>
-    <img src="Don't_Smile_at_Me.png"  width="300" height="300">
-    <img src="happier_than_ever.jpg"  width="300" height="300">
-    <img src="When_We_All_Fall_Asleep,_Where_Do_We_Go.png"  width="300" height="300">
-    <center><h2>Billie Eilish</h1></center>
-    <center><h4>Billie Eilish Pirate Baird O'Connell adalah seorang penyanyi dan penulis lagu asal Amerika Serikat. Pada 2016, Eilish merilis single debutnya, "Ocean Eyes" yang kemudian menjadi viral. EP Debutnya Don't Smile at Me dirilis pada bulan Agustus tahun 2017. Eilish dibesarkan di Highland Park, Los Angeles dari keluarga aktor dan musisi. Orang tuanya adalah Maggie Baird dan Patrick O'Connell. Ia memiliki keturunan Irlandia dan Skotlandia. Ia bersekolah di rumah dan bergabung dengan Paduan Suara Anak-anak Los Angeles pada usia delapan tahun. Pada usia 11 tahun, Eilish mulai menulis dan menyanyikan lagu-lagunya sendiri. Mengikuti jejak kakaknya, Finneas O'Connell yang sudah menulis dan memproduksi lagu-lagunya sendiri dengan bandnya.</h4></center>
+<center><p style="color: #442813;font-size: 200%">ABOUT</p></center>
+<div class="about_arts" align="center">
+    <img src="Don't_Smile_at_Me.png" style="width: 27%; height: 27%; ">
+    <img src="happier_than_ever.jpg" style="width: 27%; height: 27%; padding-right: 5%; padding-left: 5%;">
+    <img src="When_We_All_Fall_Asleep,_Where_Do_We_Go.png"   style="width: 27%; height: 27%;">
+  </div>
+    <center><p style="color: #684C37; font-size: 180%;">Billie Eilish</p></center>
+    <center><p style="color: #684C37; font-size: 140%; padding-right: 10%; padding-left: 10%;">Billie Eilish Pirate Baird O'Connell adalah seorang penyanyi dan penulis lagu asal Amerika Serikat. Pada 2016, Eilish merilis single debutnya, "Ocean Eyes" yang kemudian menjadi viral. EP Debutnya Don't Smile at Me dirilis pada bulan Agustus tahun 2017. Eilish dibesarkan di Highland Park, Los Angeles dari keluarga aktor dan musisi. Orang tuanya adalah Maggie Baird dan Patrick O'Connell. Ia memiliki keturunan Irlandia dan Skotlandia. Ia bersekolah di rumah dan bergabung dengan Paduan Suara Anak-anak Los Angeles pada usia delapan tahun. Pada usia 11 tahun, Eilish mulai menulis dan menyanyikan lagu-lagunya sendiri. Mengikuti jejak kakaknya, Finneas O'Connell yang sudah menulis dan memproduksi lagu-lagunya sendiri dengan bandnya.</p></center>
 </div>
 
 <div class="footer"><strong>© SNEE</strong></div>
