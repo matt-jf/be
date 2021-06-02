@@ -12,7 +12,7 @@
         font-family: 'Redressed';
       }
       body{
-        background-image: url("gold_bg.png");
+        background-color: #BDAFA2;
           text-align: center;
           height: 100%;
           width: 100%;
@@ -132,14 +132,14 @@
   </head>
   <body>
   <div class="topnav" id="myTopnav">
-  <a>Billie Eilish</a>
+  <a style="color: #D0BBA2; font-size: 140%; font-weight: 6;">Billie Eilish</a>
   <div class="topnav-right">
-  <a class="active" href="home.php">Home</a>
-  <a href="about.php">About</a>
-  <a href="album.php">Album</a>
-  <a href="galery.php">Galery</a>
-  <a href="tour.php">Tour</a>
-  <a href="logout.php">Logout</a>
+  <a class="active" style="font-size: 130%;"href="home.php">Home</a>
+  <a style="color: #442813;font-size: 130%;" href="about.php">About</a>
+  <a style="color: #442813;font-size: 130%;" href="album.php">Album</a>
+  <a style="color: #442813;font-size: 130%;" href="galery.php">Galery</a>
+  <a style="color: #442813;font-size: 130%;" href="tour.php">Tour</a>
+  <a style="color: #442813;font-size: 130%;" href="logout.php">Logout</a>
   </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i>
@@ -157,13 +157,14 @@ function myFunction() {
 </script>
 
   <div class="container">
-    <img src='happier_than_ever.jpg' alt='Happier Than Ever'/>
-    <center><h2 style="font-family:'Redressed'">Happier Than Ever</h1><center>
-    <center><h4 style="font-family:'Redressed'">Album Out July 30</h4></center>
-    <center><h4 style="font-family:'Redressed'"><a href="https://billieeilish.lnk.to/HappierThanEver">Pre-Order</a>
     <br>
-    <center><h1>Notes</h1><center>
-    <center><a href="create_note.php">+ &nbsp; Add Note</a><center>
+    <img src='happier_than_ever.jpg' alt='Happier Than Ever' style="width: 40%;height: 40%;" />
+    <center><p style="color: #684C37;font-family:'Redressed';font-size: 150%">Happier Than Ever</p><center>
+    <center><p style="color: #684C37;font-family:'Redressed';font-size: 100%">Album Out July 30</p></center>
+    <center><a style="font-size: 80%" href="https://billieeilish.lnk.to/HappierThanEver">Pre-Order</a></center>
+    <br>
+    <center><p style="color: #684C37;font-size: 200%">Notes</p></center>
+    <center><a style="font-size: 80%" href="create_note.php">Add Note</a><center>
     <br/>
     <table>
     <?php
@@ -172,8 +173,8 @@ function myFunction() {
         echo 'No Notes';
       } else {
         while ($note = $result->fetch_object()) {
-            echo "<h3 style=\"font-family:'Redressed'\">$note->title_note</h3>";
-            echo "<p style=\"font-family:'Redressed'\">$note->content_note</p>";
+            echo "<p style=\"padding-right: 10%; padding-left: 10%; color: #442813;font-family:'Redressed';font-size: 150%\">$note->title_note</p>";
+            echo "<p style=\"padding-right: 10%; padding-left: 10%; color: #442813;font-family:'Redressed';font-size: 100%\">$note->content_note</p>";
             echo "<a style=\"font-family:'Redressed'\" href=\"edit_note.php?id_note=$note->id_note\">Edit</a>";
             printf('<form action="delete_note.php" method="post"><input type="hidden" name="id_note" value="%d"><input type="submit" value="Delete"></form>', $note->id_note);
         }
@@ -182,6 +183,5 @@ function myFunction() {
     </table>
     </div>
     <div class="footer"><strong>© SNEE</strong></div>
-
   </body>
 </html>
