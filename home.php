@@ -5,7 +5,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Redressed" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
     <title>Home | Billie Eilish</title>
     <style type="text/css">
       * {
@@ -64,6 +65,7 @@
         font-family: Redressed;
     }
     .topnav {
+      width: 100%;
       margin-top: -10px;
       margin-left:-10px;
         font-family: 'Redressed';
@@ -76,7 +78,7 @@
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 16px;
+  padding: 8px 10px;
   text-decoration: none;
   font-size: 17px;
   background-color:black;
@@ -89,7 +91,7 @@
 
 .topnav a.active {
   background-color: #328fa8;
-  color: white;
+  color: #D0BBA2;
 }
 
 .topnav .icon {
@@ -161,7 +163,7 @@ function myFunction() {
     <img src='happier_than_ever.jpg' alt='Happier Than Ever' style="width: 40%;height: 40%;" />
     <center><p style="color: #684C37;font-family:'Redressed';font-size: 150%">Happier Than Ever</p><center>
     <center><p style="color: #684C37;font-family:'Redressed';font-size: 100%">Album Out July 30</p></center>
-    <center><a style="font-size: 80%" href="https://billieeilish.lnk.to/HappierThanEver">Pre-Order</a></center>
+    <center><a style="background-image: none; font-size: 80%" href="https://billieeilish.lnk.to/HappierThanEver">Pre-Order</a></center>
     <br>
     <center><p style="color: #684C37;font-size: 200%">Notes</p></center>
     <center><a style="font-size: 80%" href="create_note.php">Add Note</a><center>
