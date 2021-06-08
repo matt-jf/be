@@ -176,8 +176,7 @@ function myFunction() {
            " - ".mysqli_error($koneksi));
       }
       $no = 1;
-      while($row = mysqli_fetch_assoc($result))
-      {
+      while($row = mysqli_fetch_assoc($result)) {
       ?>
        <tr>
           <td><?php echo $row['date_tour']; ?></td>
