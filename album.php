@@ -123,6 +123,7 @@ function myFunction() {
 }
 </script>
 <div class="container" align="center">
+  <center><p style="color: white;font-size: 200%">ALBUM</p></center>
   <?php
   $query = "SELECT * FROM album ORDER BY id_album DESC";
   $result = mysqli_query($koneksi, $query);
