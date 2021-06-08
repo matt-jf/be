@@ -54,7 +54,6 @@
       color: #FFE0C8;
       padding: 10px;
       text-decoration: none;
-      font-size: 12px;
         font-family: 'Redressed';
     }
     input[type=submit]{
@@ -165,7 +164,7 @@ function myFunction() {
     <center><p style="color: #684C37;font-family:'Redressed';font-size: 100%">Album Out July 30</p></center>
     <center><a style="background-image: none; font-size: 80%" href="https://billieeilish.lnk.to/HappierThanEver">Pre-Order</a></center>
     <br>
-    <center><p style="color: #684C37;font-size: 200%">Notes</p></center>
+    <center><p style="color: #684C37;font-size: 200%">NOTES</p></center>
     <center><a style="font-size: 80%" href="create_note.php">Add Note</a><center>
     <br/>
     <table>
