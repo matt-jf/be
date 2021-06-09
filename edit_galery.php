@@ -88,18 +88,18 @@
         <h3>Please complete the form</h3>
         <?php endif; ?>
         <form action="edit_galery_process.php" method="post">
-        <input type="hidden" name="id_galery" value="<?php echo $galery->id_galery; ?>">
-        <label>
-            Title:
-            <input type="text" name="name_galery" value="<?php echo $galery->name_galery; ?>" autofocus>
-        </label>
-        <br>
-        <label>
-            Insert:
-            <input type="file" name="photo_galery" value="<?php echo $galery->photo_galery; ?>">
-        </label>
-        <br>
-        <button type="submit">Save Changes</button>
+            <input type="hidden" name="id_galery" value="<?php echo $galery->id_galery; ?>">
+            <label>
+                Title:
+                <input type="text" name="name_galery" value="<?php echo $galery->name_galery; ?>" autofocus>
+            </label>
+            <br>
+            <label>
+                Insert:
+                <input type="file" name="photo_galery" value="<?php echo $galery->photo_galery; ?>">
+            </label>
+            <br>
+            <button type="submit">Save Changes</button>
         </form>
     </div>
 </body>
