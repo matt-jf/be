@@ -113,33 +113,33 @@
       }
     }
 
-      @media screen and (max-width: 600px) {
-        .topnav.responsive {
-          position: relative;
-        }
-
-        .topnav.responsive .icon {
-          position: absolute;
-          right: 0;
-          top: 0;
-        }
-
-        .topnav.responsive a {
-          float: none;
-          display: block;
-          text-align: left;
-        }
+    @media screen and (max-width: 600px) {
+      .topnav.responsive {
+        position: relative;
       }
 
-      .footer {
-        position: static;
+      .topnav.responsive .icon {
+        position: absolute;
         right: 0;
-        bottom: 0;
-        left: 0;
-        padding: 1rem;
-        text-align: center;
-        color:white;
+        top: 0;
       }
+
+      .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+    }
+
+    .footer {
+      position: static;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      padding: 1rem;
+      text-align: center;
+      color:white;
+    }
   </style>
 </head>
 <body>
