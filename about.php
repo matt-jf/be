@@ -1,8 +1,8 @@
 <?
   session_start();
-  if ( !isset($_SESSION["login"]) ) {
-    header("Location: login.php");
-    exit;
+  if (!empty($_SESSION['app123_logged_in'])) {
+  } else {
+    header('Location: login.php');
   }
 ?>
 <!DOCTYPE html>
