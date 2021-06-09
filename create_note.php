@@ -74,17 +74,17 @@
         <h3>Please complete the form</h3>
         <?php endif; ?>
         <form action="create_note_process.php" method="post">
-        <label>
-            Title:
-            <input type="text" name="title_note" required autofocus>
-        </label>
-        <br>    
-        <label>
-            Content:
-            <textarea name="content_note" cols="30" rows="10" required></textarea>
-        </label>
-        <br>
-        <button type="submit"> Posting</button>
+            <label>
+                Title:
+                <input type="text" name="title_note" required autofocus>
+            </label>
+            <br>    
+            <label>
+                Content:
+                <textarea name="content_note" cols="30" rows="10" required></textarea>
+            </label>
+            <br>
+            <button type="submit"> Posting</button>
         </form>
     </div>
 </body>
