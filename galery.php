@@ -95,7 +95,7 @@
   display: grid;
   padding-top: 5%;
   padding-left: 2%;
-  grid-gap: 2%;
+  grid-gap: 3%;
   align-content: center;
   align-items: center;
   grid-template-columns: 30% 30% 30%;
@@ -138,7 +138,7 @@ function myFunction() {
 </script>
 <div class="container" align="center">
   <p style="color: white;font-size: 200%">GALERY</p>
-    <a style="font-size: 80%;" href="create_galery.php">Add Photo</a>
+    <a style="font-size: 100%;" href="create_galery.php">Add Photo</a>
   <?php
   $query = "SELECT * FROM galery";
   $result = mysqli_query($koneksi, $query);
