@@ -15,6 +15,8 @@ $note = $result->fetch_object();
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -52,11 +54,11 @@ $note = $result->fetch_object();
       width: 100%;
     }
          body{
-          background-image: url("gold_bg.jpg");
+          background-image: url("gold_bg.png");
           text-align: center;
           height: 100%;
           width: 100%;
-          font-family: "Trebuchet MS";
+          font-family: "Redressed";
       } 
       h1 {
         text-transform: uppercase;
@@ -75,7 +77,7 @@ $note = $result->fetch_object();
 </head>
 <body>
 <center>
-        <h1>Edit Note <?php echo  $note->title_note; ?></h1>
+        <h1>Edit Note</h1>
       <center>
 <div class="container">
     <?php if (isset($_GET['invalid'])): ?>
