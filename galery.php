@@ -3,6 +3,10 @@
   ini_set('display_errors', true);
   include('koneksi.php');
   session_start();
+  if (!empty($_SESSION['app123_logged_in'])) {
+  } else {
+    header('Location: login.php');
+  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
